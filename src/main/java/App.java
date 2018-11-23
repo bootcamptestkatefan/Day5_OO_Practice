@@ -10,30 +10,3 @@ class App {
         mobileB.callout("greetings from fantszAndroidS9");
     }
 }
-
-class IPhone extends Mobile{
-    public IPhone (String name, String color, String brand){
-        super(name, color, brand);
-    }
-}
-
-class Android extends Mobile{
-    public Android (String name, String color, String brand){
-        super(name, color, brand);
-    }
-}
-
-class Mobile {
-
-    private String name;
-    private String color;
-    private String brand;
-    public Mobile(String name, String color, String brand) {
-        this.name = name;
-        this.color = color;
-        this.brand = brand;
-    }
-    public void callout(String message) {
-        System.out.println("Message: "+message);
-    }
-}
