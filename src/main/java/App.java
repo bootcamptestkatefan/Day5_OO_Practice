@@ -5,8 +5,12 @@ class App {
 
     public static void main(String[] args) {
         Mobile mobileA = new Mobile("fantszIPhone", "Blue", "IPhone7s");
-        mobileA.callout("greetings from fantszIphone7s");
-        Mobile mobileB = new Mobile("fantszAndroid", "Blue", "AndroidS9");
-        mobileB.callout("greetings from fantszAndroidS9");
+        mobileA.callout("<IPhone> Greetings from fantszIphone7s");
+        mobileA.basicInfo();
+        System.out.println("----------------------------------------------");
+        Mobile mobileB = new Mobile("fantszAndroid", "White", "AndroidS9");
+        mobileB.callout("<Android> Greetings from fantszAndroidS9");
+        mobileB.basicInfo();
+        System.out.println("----------------------------------------------");
     }
 }

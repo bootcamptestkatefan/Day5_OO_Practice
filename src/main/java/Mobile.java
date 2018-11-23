@@ -11,7 +11,7 @@ class Mobile {
     public void callout(String message) {
         System.out.println("Message: "+message);
     }
-    //public void BasicInfo(String name, String color, String brand) {
-    //    System.out.println("Name: "+name+", color: "+color+", brand: "+brand);
-    // }
+    public void basicInfo() {
+        System.out.println("Name: "+name+", color: "+color+", brand: "+brand);
+    }
 }
