@@ -4,13 +4,23 @@
 class App {
 
     public static void main(String[] args) {
-        Mobile mobileA = new Mobile("fantszIPhone", "Blue", "IPhone7s");
-        mobileA.callout("<IPhone> Greetings from fantszIphone7s");
+        IPhone mobileA = new IPhone("fantszIPhone", "Blue", "IPhone7s");
+        mobileA.callout("Greetings from fantszIphone7s");
         mobileA.basicInfo();
+
         System.out.println("----------------------------------------------");
-        Mobile mobileB = new Mobile("fantszAndroid", "White", "AndroidS9");
-        mobileB.callout("<Android> Greetings from fantszAndroidS9");
+        Android mobileB = new Android("fantszAndroid", "White", "AndroidS9");
+        mobileB.callout("Greetings from fantszAndroidS9");
         mobileB.basicInfo();
+
         System.out.println("----------------------------------------------");
+        IPhone iPhone = new IPhone("fantszIPhone", "Blue", "IPhone7s");
+        Person fantsz = new Person(iPhone, "fantsz");
+        fantsz.callout("Length of this line exceed 30. So message cannot be sent");
+
+        System.out.println("----------------------------------------------");
+        Android android = new Android("fantszAndroid", "White", "AndroidS9");
+        Person fantszching = new Person(mobileB, "fantszching");
+        fantszching.callout("Length of this line exceed 30. So message cannot be sent");
     }
 }
